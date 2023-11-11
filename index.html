@@ -1,55 +1,133 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>DevBook - Bootstrap 5 Book/eBook Landing Page Template For Developers</title>
+    <title>ALOFT AND UNBOUND</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico"> 
-    
+    <meta name="description" content="A book on embracing the journey, valuing the process over the destination. About paragliding life.">
+    <meta name="author" content="Jigish Gohil">  
+    <meta name="keywords" content="paragliding, paraglidinglife, paraglidinglove, paraglidingbook, book, paragliding in india, paragliding in china, bestseller">  
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta property="og:title" content="ALOFT AND UNBOUND" />
+<meta property="og:description" content="A book on embracing the journey, valuing the process over the destination. About paragliding life." /> 
+    <meta property="og:image" content="https://aloftandunbound.paraguide.in/assets/images/preview.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://aloftandunbound.paraguide.in/assets/images/preview.jpg" />
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:700|Roboto:400,400i,700&display=swap" rel="stylesheet">
     
     <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+<style>
+  .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+#mytopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#mytopBtn:hover {
+  background-color: #555;
+}
+</style>
 </head> 
 
-<body>    
-    <header class="header">	    
-        <div class="branding">
-            <div class="container-fluid position-relative py-3">
-                <div class="logo-wrapper">
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/images/site-logo.svg" alt="logo" ><span class="logo-text">DevBook</span></a></div>    
-                </div><!--//docs-logo-wrapper-->
-	        
-            </div><!--//container-->
-        </div><!--//branding-->
-    </header><!--//header-->
-    
+<body>
+<button onclick="topFunction()" id="mytopBtn" title="Go to top">Top</button>
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>    
+      <div class="topnav" id="myTopnav">
+            <a class="nav-link py-1" href="#info">About The Book</a>
+            <a class="nav-link py-1" href="#preview">Preview</a>
+            <a class="nav-link py-1" href="#inthebook">What's In The Book?</a>
+            <a class="nav-link py-1" href="#FAQs">FAQs</a>
+            <a class="nav-link py-1" href="#reviews">Reviews</a>
+            <a class="nav-link py-1" href="#abouttheauthor">About The Author</a>
+            <a class="nav-link py-1" href="#sponsors">Sponsors</a>
+  <a href="javascript:void(0);" class="icon" onclick="mynavFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+      </div>
     <section class="hero-section">
 	    <div class="container">
 		    <div class="row">
 			    <div class="col-12 col-md-7 pt-5 mb-5 align-self-center">
 				    <div class="promo pe-md-3 pe-lg-5">
-					    <h1 class="headline mb-3">
-						    Free Book &amp; eBook <br>Landing Page Template   
+					    <h1 class="headline mb-3" style="font-size: 1.7rem;">
+						    <img src="assets/images/a-out.png" alt="" width=50>ALOFT AND UNBOUND   
 					    </h1><!--//headline-->
 					    <div class="subheadline mb-4">
-						    A free Bootstrap 5 template for developers and programmers who want to self-publish books. Download now and start selling your book right away!
+						    A book on embracing the journey, valuing the process over the destination.
 						    
 					    </div><!--//subheading-->
 					    
 					    <div class="cta-holder row gx-md-3 gy-3 gy-md-0">
 						    <div class="col-12 col-md-auto">
-						        <a class="btn btn-primary w-100" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devbook-free-bootstrap-5-book-ebook-landing-page-template-for-developers/">Buy for $39</a>
+						        <a class="btn btn-primary w-100" href="https://linktr.ee/aloftandunboundstore"> I want this book</a>
 						    </div>
 						    <div class="col-12 col-md-auto">
 						        <a class="btn btn-secondary scrollto w-100" href="#benefits-section">Learn More</a>
@@ -66,145 +144,91 @@
 							  
 							    <div class="carousel-inner">
 								    <div class="carousel-item active">
-								        <blockquote class="quote p-4 theme-bg-light">
-									        "Excellent Book! Add your book reviews here consectetur adipiscing elit. Aliquam euismod nunc porta urna facilisis tempor. Praesent mauris neque, viverra quis erat vitae, auctor imperdiet nisi."     
+								        <blockquote class="quote p-4 theme-bg-light" style="height:300px;">
+									        "I wholeheartedly recommend "Aloft And Unbound" to anyone interested in exploring the wonders of paragliding or simply seeking an enjoyable read. Jigish's passion and authentic voice shine through these pages, and I am confident that you will find inspiration and delight within its covers.
+."     
 								        </blockquote><!--//item-->
 								        <div class="source row gx-md-3 gy-3 gy-md-0 align-items-center">
 									        <div class="col-12 col-md-auto text-center text-md-start">
-									            <img class="source-profile" src="assets/images/profiles/profile-1.png" alt="image" >
+									            <img class="source-profile" src="assets/images/profiles/debu.png" alt="image" >
 									        </div><!--//col-->
 									        <div class="col source-info text-center text-md-start">
-										        <div class="source-name">James Doe</div>
-										        <div class="soure-title">Co-Founder, Startup Week</div>
+										        <div class="source-name">Debu Chaudhury</div>
+										        <div class="soure-title" style="height:50px;">Paragliding Pilot</div>
 										    </div><!--//col-->
 								        </div><!--//source-->
 								    </div><!--//carousel-item-->
 								    <div class="carousel-item">
-								        <blockquote class="quote p-4 theme-bg-light">
-									        "Highly recommended consectetur adipiscing elit. Proin et auctor dolor, sed venenatis massa. Vestibulum ullamcorper lobortis nisi non placerat praesent mauris neque"     
+								        <blockquote class="quote p-4 theme-bg-light" style="height:300px;">
+									        "This book is different. It is light and quick, yet solid, like the best wings are. It is accessible and understandable like the advice Jigish gives to new pilots who turn to him. Like a good pilot, it both looks back and moves forward, and brings the sky within reach."     
 								        </blockquote><!--//item-->
 								        <div class="source row gx-md-3 gy-3 gy-md-0 align-items-center">
 									        <div class="col-12 col-md-auto text-center text-md-start">
 									            <img class="source-profile" src="assets/images/profiles/profile-2.png" alt="image" >
 									        </div><!--//col-->
 									        <div class="col source-info text-center text-md-start">
-										        <div class="source-name">Jean Doe</div>
-										        <div class="soure-title">Co-Founder, Startup Week</div>
+										        <div class="source-name">Vishal Dadlani</div>
+										        <div class="soure-title" style="height:50px;">Singer, Songwriter, Composer, Rockstar and a Paragliding Pilot</div>
 										    </div><!--//col-->
 								        </div><!--//source-->
 								    </div><!--//carousel-item-->
-								    <div class="carousel-item">
-								        <blockquote class="quote p-4 theme-bg-light">
-									        "Awesome! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod nunc porta urna facilisis tempor. Praesent mauris neque, viverra quis erat vitae."     
+							  <div class="carousel-item">
+								        <blockquote class="quote p-4 theme-bg-light" style="height:300px;">
+									        "Dive into the world of paragliding, experience it's thrills and rub shoulders with a breed of people whose world revolves around flying alone in the sky and yet live a life of deep camaraderie. Get insights into paragliding life and get a close up view of the thrills, enjoyment & pains of a paragliding pilot through the eyes of Jigish, who is into IT by profession and is a free bird at heart. A light read, with philosophical tones and a touch of romanticism."     
 								        </blockquote><!--//item-->
 								        <div class="source row gx-md-3 gy-3 gy-md-0 align-items-center">
 									        <div class="col-12 col-md-auto text-center text-md-start">
 									            <img class="source-profile" src="assets/images/profiles/profile-3.png" alt="image" >
 									        </div><!--//col-->
 									        <div class="col source-info text-center text-md-start">
-										        <div class="source-name">Andy Doe</div>
-										        <div class="soure-title">Frontend Developer, Company Lorem</div>
+										        <div class="source-name">Ashutosh Chopra</div>
+										        <div class="soure-title" style="height:50px;">Author, Fighter Jets, Commercial Jets and a Paragliding Pilot</div>
 										    </div><!--//col-->
 								        </div><!--//source-->
-								    </div><!--//carousel-item-->
+								    </div><!--//carousel-item-->	    
 								</div><!--//carousel-inner-->
 							</div><!--//quotes-carousel-->
-							
+											    <div class="text-center"><a class="theme-link scrollto" href="#reviews-section">See all book reviews</a></div>
 					    </div><!--//hero-quotes-->
 				    </div><!--//promo-->
 			    </div><!--col-->
 			    <div class="col-12 col-md-5 mb-5 align-self-center">
 				    <div class="book-cover-holder">
 					    <img class="img-fluid book-cover" src="assets/images/devbook-cover.png" alt="book cover" >
-					    <div class="book-badge d-inline-block shadow">
-						    New<br>Release
-					    </div>
+
 				    </div><!--//book-cover-holder-->
-				    <div class="text-center"><a class="theme-link scrollto" href="#reviews-section">See all book reviews</a></div>
+
 			    </div><!--col-->
 		    </div><!--//row-->
 	    </div><!--//container-->
     </section><!--//hero-section-->
     
-    <section id="benefits-section" class="benefits-section theme-bg-light-gradient py-5">
+    <section id="info" id="benefits-section" class="benefits-section theme-bg-light-gradient py-5">
 	    <div class="container py-5">
-		    <h2 class="section-heading text-center mb-3">What Will You Get From This Book?</h2>
-		    <div class="section-intro single-col-max mx-auto text-center mb-5">Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit consequat consequat. Orci varius natoque penatibus et magnis. </div>
-		    <div class="row text-center">
-			    <div class="item col-12 col-md-6 col-lg-4">
-				    <div class="item-inner p-3 p-lg-4">
-					    <div class="item-header mb-3">
-						    <div class="item-icon"><i class="fas fa-laptop-code"></i></div>
-						    <h3 class="item-heading">Build Lorem Ipsum lobortis nec mauris habitant morbi</h3>
-					    </div><!--//item-heading-->
-					    <div class="item-desc">
-						    List one of your book's benefits here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit consequat consequat. 
-					    </div><!--//item-desc-->
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-md-6 col-lg-4">
-				    <div class="item-inner p-3 p-lg-4">
-					    <div class="item-header mb-3">
-						    <div class="item-icon"><i class="fab fa-js-square"></i></div>
-						    <h3 class="item-heading">Learn from lorem ipsum dolor sit amet consectetur</h3>
-					    </div><!--//item-heading-->
-					    <div class="item-desc">
-						    List one of your book's benefits here. Orci varius natoque penatibus et magnis dis parturient montes.
-					    </div><!--//item-desc-->
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-md-6 col-lg-4">
-				    <div class="item-inner p-3 p-lg-4">
-					    <div class="item-header mb-3">
-						    <div class="item-icon"><i class="fab fa-rocketchat"></i></div>
-						    <h3 class="item-heading">Discover phasellus id egestas tellus maximus</h3>
-					    </div><!--//item-heading-->
-					    <div class="item-desc">
-						    List one of your book's benefits here. Orci varius natoque penatibus et magnis dis parturient montes. 
-					    </div><!--//item-desc-->
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-md-6 col-lg-4">
-				    <div class="item-inner p-3 p-lg-4">
-					    <div class="item-header mb-3">
-						    <div class="item-icon"><i class="fab fa-angular"></i></div>
-						    <h3 class="item-heading">Master aliquet augue ac ipsum lobortis interdum</h3>
-					    </div><!--//item-heading-->
-					    <div class="item-desc">
-						    List one of your book's benefits here. Orci varius natoque penatibus et magnis dis parturient montes. 
-					    </div><!--//item-desc-->
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-md-6 col-lg-4">
-				    <div class="item-inner p-3 p-lg-4">
-					    <div class="item-header mb-3">
-						    <div class="item-icon"><i class="fas fa-code-branch"></i></div>
-						    <h3 class="item-heading">Deploy elementum mauris tincidunt tempus sagittis</h3>
-					    </div><!--//item-heading-->
-					    <div class="item-desc">
-						    List one of your book's benefits here. Orci varius natoque penatibus et magnis dis parturient montes. 
-					    </div><!--//item-desc-->
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-md-6 col-lg-4">
-				    <div class="item-inner p-3 p-lg-4">
-					    <div class="item-header mb-3">
-						    <div class="item-icon"><i class="fas fa-hand-holding-usd"></i></div>
-						    <h3 class="item-heading">Become mattis est et mauris tempus non imperdiet</h3>
-					    </div><!--//item-heading-->
-					    <div class="item-desc">
-						    List one of your book's benefits here. Orci varius natoque penatibus et magnis dis parturient montes. 
-					    </div><!--//item-desc-->
-				    </div><!--//item-inner-->
-			    </div><!--//item-->
+		    <h2 class="section-heading text-center mb-3">About The Book</h2>
+		    <div class="section-intro single-col-max mx-auto text-left mb-5"><p>How do you convey to someone, what is this “Paragliding Life”? This book will take you on a paragliding flight. It will give you a glimpse into what makes paragliding pilots want to go to the mountains any time they are allowed to. Sometimes risking their family’s displeasure, limbs and at times life. How does one's perceptions and priorities change after taking up this sport? This book will go about whetting your interest and curiosity in a roundabout, often confusing, and subtle way. Some of it may also be applicable to any pursuit that is passionately indulged in.</p><p>
+
+There is a beautiful word “flow” which is used to describe a state of mind when you are completely absorbed in any activity. The actual act of flying can be described as “flow”. But flying, although major, is just one part of "Paragliding Life” - people, places, and the different experiences we are exposed to, add essential flavour to the whole package. In this book that is what is talked about; in a bunch of short essays.</p><p>
+
+This book holds undeniable appeal for paragliding pilots, their friends, and family members. However, it goes beyond that—it is also a source of inspiration and wisdom for anyone on a genuine quest to learn from the virtues of journeying, valuing the process rather than being solely focused on the destination. For those who prefer visual storytelling, this book is thoughtfully embellished with a wealth of personally created pictures and drawings that will not only occupy your time but also stir your imagination.<p> </div>
+
 		    </div><!--//row-->
 	    </div><!--//container-->
     </section><!--//benefits-section-->
-    
-    <section id="content-section" class="content-section">
+        <section id="preview" id="audience-section" class="audience-section py-5">
+	    <div class="container">
+		    <h2 class="section-heading text-center mb-4">Preview</h2>
+		    
+		    <div class="section-intro single-col-max mx-auto text-center mb-5">
+			    <iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" style="border: 1px solid lightgray; width: 100%; height: 400px;" src="https://heyzine.com/flip-book/69665e53f5.html"></iframe>
+		    </div><!--//section-intro-->
+
+	    </div><!--//container-->
+    </section><!--//audience-section-->
+    <section id="inthebook" id="content-section" class="content-section">
 	    <div class="container">
 		    <div class="single-col-max mx-auto">
-		    <h2 class="section-heading text-center mb-5">What's Included</h2>
+		    <h2 class="section-heading text-center mb-5">What's In The Book?</h2>
 			    <div class="row">
 				    <div class="col-12 col-md-6">
 					    <div class="figure-holder mb-5">
@@ -214,16 +238,17 @@
 				    <div class="col-12 col-md-6 mb-5">
 					    <div class="key-points mb-4 text-center">
 						    <ul class="key-points-list list-unstyled mb-4 mx-auto d-inline-block text-start">
-							    <li><i class="fas fa-check-circle me-2"></i>List your book's content here.</li>
-							    <li><i class="fas fa-check-circle me-2"></i>PDF fermentum tincidunt erat.</li>
-							    <li><i class="fas fa-check-circle me-2"></i>EPUB curabitur fermentum.</li>
-							    <li><i class="fas fa-check-circle me-2"></i>Lorem ipsum dolor sit amet.</li>
-							    <li><i class="fas fa-check-circle me-2"></i>Praesent molestie odio risus. </li>
-							    <li><i class="fas fa-check-circle me-2"></i>Kindle curabitur fermentum.</li>
-							    <li><i class="fas fa-check-circle me-2"></i>Kindle curabitur fermentum.</li>
-							    <li><i class="fas fa-check-circle me-2"></i>Kindle curabitur fermentum.</li>
+							    <li><i class="fas fa-check-circle me-2"></i>Places we fly.</li>
+							    <li><i class="fas fa-check-circle me-2"></i>People around us.</li>
+							    <li><i class="fas fa-check-circle me-2"></i>About being home.</li>
+							    <li><i class="fas fa-check-circle me-2"></i>A love story.</li>
+							    <li><i class="fas fa-check-circle me-2"></i>Why we do what we do.</li>
+							    <li><i class="fas fa-check-circle me-2"></i>Chasing dreams.</li>
+							    <li><i class="fas fa-check-circle me-2"></i>Teaching and learning.</li>
+							    <li><i class="fas fa-check-circle me-2"></i>Little adventures. </li>
+							    <li><i class="fas fa-check-circle me-2"></i>Generousity and gratefulness.</li>
 						    </ul>
-						    <div class="text-center"><a class="btn btn-primary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devbook-free-bootstrap-5-book-ebook-landing-page-template-for-developers/">I want this book</a></div>
+						    <div class="text-center"><a class="btn btn-primary" href="https://linktr.ee/aloftandunboundstore">Order Your Copy Today</a></div>
 					    </div><!--//key-points-->
 					    
 				    </div><!--//col-12-->   
@@ -231,84 +256,225 @@
 		    </div><!--//single-col-max-->
 	    </div><!--//container-->
     </section><!--//content-section-->
-    
-    <section id="audience-section" class="audience-section py-5">
+<section id="FAQs" class="theme-bg-light-gradient py-5">
+<div class="container py-5">
+     <h2 class="section-heading text-center mb-5">Frequently Asked Questions</h2>
+      <div class="accordion">
+              <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <span class="accordion-title">Why should I buy this book?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <ul>
+            <li>This is the only non-technical book about paragliding in the world.</li>
+  <li>Because you are a paragliding pilot, you care for this sport, love to know all about it and would support all endeavors that add immense value to your passion.</li>
+  <li>You want to share the love for this sport with the people you love. You want to include them in your passion without boring them.</li>
+  <li>You like to make the sport you love accessible to people not into this sport.</li>
+  <li>Because you trust any one of Debu's, Vishal's, Ashutosh's or Amit's words.</li>
+  <li>Not into paragliding? Then you love life and like anything that enriches it.</li>
+  <li>You love to know about people and places, especially if it is not in a boring touristic way.</li>
+  <li>You like original art and photographs.</li>
+  <li>You've got time, parawaiting, waiting for something/someone, off season, in bed healing, for whatever reason.</li>
+  <li>Makes a very good gift for anyone, whether into paragliding or not.</li>
+  <li>You or your loved ones may be in it, in some form, recognisable or not.</li>
+  <li>Use your creativity, think of 42 more reasons to make it to 50. Make up whatever reason that gets this book in your hands.</li>
+</ul>  
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-1" aria-expanded="false">
+            <span class="accordion-title">Where can I buy this book from?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              The book is available from various online platforms such as Amazon, Flipkart, Notion Press etc. Follow <a href="https://linktr.ee/aloftandunboundstore">this link</a> to get various options to order from.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-2" aria-expanded="false">
+            <span class="accordion-title">Where can I find discount coupons from and how do I use it?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              The discount coupons will be listed on the <a href="https://linktr.ee/aloftandunboundstore">Store page</a> as and when available. For more you can follow the author on various social medias listed below on this page. Discount coupons are usually available only for the Notion Press store, use the code at the checkout there.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-3" aria-expanded="false">
+            <span class="accordion-title">What is Print On Demand?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              The book is made available through Print on Demand. From the publisher's website: "The books get listed on some of the most popular ecommerce websites like Flipkart, Amazon, and our very own Notion Press store. When readers find a book intriguing and decide to make a purchase, a purchase order is received by the ecommerce websites. The purchase order is then notified to people associated with the printing of the book, which provides details on the name of the book and the number of copies required. Depending on this information, the selected book goes for print and is delivered at readers doorsteps. So, every book that a reader owns is a fresh-print copy that has not been stocked in a warehouse."
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-4" aria-expanded="false">
+            <span class="accordion-title">Why is the book expensive?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              That is due to two reasons. Firstly because of Print On Demand distribution. This book is extremely niche, so traditional publishing does not work. Traditional publishing requires a large print run passing on the economy of scale to the readers. In print on demand, each book is printed and shipped when someone orders it making it expensive.</p><p>Secondly, this book is printed in full colours on high quality art paper. Normal books are single colour and on 70 gsm normal paper.
+            </p><p>Compared to other paragliding books, this book is still at a bargain price. It is about the same price as a bus ride between Delhi and Bir, which is not much.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <span class="accordion-title">Why does it take so long to get my order?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Depending on the queue the printers have, your order gets printed and then shipped, so it takes longer than normal order where the books are printed and kept in stock.
+            </p>
+          </div>
+        </div>
+              <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <span class="accordion-title">I want to buy in bulk to give away, can I get special rate?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Sure, Notion Press offers special discount to authors to buy in bulk, get in touch to get the book at subsidised rates.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <span class="accordion-title">Can I get a free copy?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              No, but if you really want this book and don't have enough money to buy then you can get it at the price author has to buy for himself.
+            </p>
+          </div>
+        </div>         
+        <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <span class="accordion-title">Can I get an ebook?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              No, because this book has a lot of full colour pages which will not render well on most ebook readers. Also the layout design of the book does not work well in instruments displaying single page at a time.
+            </p>
+          </div>
+        </div>
+                <div class="accordion-item">
+          <button id="accordion-button-5" aria-expanded="false">
+            <span class="accordion-title">Can I still be on the sponsors list?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="accordion-content">
+            <p>
+              Of course, this is the advantage of Print On Demand, your logo can be included in the book and on this page any time. Get in touch, it is not expensive to be in this #1 Best Seller.
+            </p>
+          </div>
+        </div>                         
+      </div>
+    </div>
+</div>
+</section>     
+ 
+    <section id="reviews" id="reviews-section" class="reviews-section py-5">
 	    <div class="container">
-		    <h2 class="section-heading text-center mb-4">Who This Book Is For</h2>
-		    <div class="section-intro single-col-max mx-auto text-center mb-5">
-			    List your target readers in this section and back up with reviews. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales sit amet neque sit amet molestie. Vivamus hendrerit nisi condimentum erat tempus, vitae accumsan odio euismod.
-		    </div><!--//section-intro-->
-		    <div class="audience mx-auto">
-			    <div class="item row gx-3">
-				    <div class="col-auto item-icon"><i class="fas fa-user-check"></i></div>
-				    <div class="col">
-					    <h4 class="item-title">Software Developers</h4>
-					    <div class="item-desc">Learn lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales sit amet neque sit amet molestie.</div>
-				    </div><!--//col-->
-			    </div><!--//item-->			    
-			    <div class="item row gx-3">
-				    <div class="col-auto item-icon"><i class="fas fa-user-check"></i></div>
-				    <div class="col">
-					    <h4 class="item-title">App Developers</h4>
-					    <div class="item-desc">Learn lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales sit amet neque sit amet molestie.</div>
-				    </div><!--//col-->
-			    </div><!--//item-->			    
-			    <div class="item row gx-3">
-				    <div class="col-auto item-icon"><i class="fas fa-user-check"></i></div>
-				    <div class="col">
-					    <h4 class="item-title">Web Developers</h4>
-					    <div class="item-desc">Learn lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales sit amet neque sit amet molestie.</div>
-				    </div><!--//col-->
-			    </div><!--//item-->
-			    <div class="item row gx-3">
-				    <div class="col-auto item-icon"><i class="fas fa-user-check"></i></div>
-				    <div class="col">
-					    <h4 class="item-title">Product Designers</h4>
-					    <div class="item-desc">Learn lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales sit amet neque sit amet molestie.</div>
-				    </div><!--//col-->
-			    </div><!--//item-->
-		    </div><!--//audience-->
-	    </div><!--//container-->
-    </section><!--//audience-section-->
-    
-    <section id="form-section" class="form-section">
-	    <div class="container">
-		    <div class="lead-form-wrapper single-col-max mx-auto theme-bg-light rounded p-5">
-			    <h2 class="form-heading text-center">Get A Free Preview</h2>
-			    <div class="form-intro text-center mb-3">Sign up to get a free preview of the book. <br>You can offer visitors free book previews to generate leads.</div>
-			    <div class="form-wrapper mx-auto">					
-					<form class="signup-form row g-2 align-items-center">
-	                    <div class="col-12 col-lg-9">
-	                        <label class="sr-only" for="semail">Email</label>
-	                        <input type="email" id="semail" name="semail1" class="form-control me-md-1 semail" placeholder="Your email">
-	                    </div>
-	                    <div class="col-12 col-lg-3">
-	                        <button type="submit" class="btn btn-primary btn-submit w-100">Send</button>
-	                    </div>
-	                </form><!--//signup-form-->
-			    </div><!--//form-wrapper-->
-		    </div><!--//lead-form-wrapper-->
-	    </div><!--//container-->
-    </section><!--//form-section-->
-    
-    <section id="reviews-section" class="reviews-section py-5">
-	    <div class="container">
-		    <h2 class="section-heading text-center">Book Reviews</h2>
-		    <div class="section-intro text-center single-col-max mx-auto mb-5">See what our readers are saying. </div>
+		    <h2 class="section-heading text-center">More Book Reviews</h2>
+		    <div class="section-intro text-center single-col-max mx-auto mb-5">See what readers are saying. </div>
 		    <div class="row justify-content-center">
+		    
+		    			    <div class="item col-12 col-lg-4 p-3 mb-4">
+				    <div class="item-inner theme-bg-light rounded p-4">
+					    
+					    <blockquote class="quote">
+					        <p>"This is a well-written book, and one that dares to be different.
+Highly recommended."<span id="dots2">...</span><span id="more2"><br><br>Aloft and Unbound tells a story of paragliding from a completely
+different perspective. Jigish Gohil is an Indian paraglider pilot who now lives in Bir. The book opens with his first solo flight without any supervision, and a quick flashback to his training. 
+<br><br>
+He then takes us on a journey through the experiences he
+has had mastering the art of paragliding, how it affects his
+choice of where to live, and some of the applications of Buddhist
+philosophy to flying. The sharp contrasts of learning and flying
+outside the Western European bubble we’ve come to know are
+some of the book’s most endearing points, and in this respect
+it’s very different from most of the paragliding books on the
+virtual shelves of the online book stores. There is no degree of
+isolationism though; he also talks about – and gives credit
+to – the external influences on Indian paragliding from
+other countries.
+<br><br>
+The book is nicely organised into bite-sized chapters so you can
+pick it up and put it down, but Jigish wants you to keep reading,
+and tempts you with a segue at the very end of each chapter into
+the next. He doesn’t take himself too seriously and makes jokes
+about his standing in the community, and how much he’ll make
+from writing the book (!). 
+<br><br>
+Whilst a fair proportion of the book revolves around Bir, Jigish
+has travelled around India and writes about other sites and his
+experiences there. He is a multi-faceted individual and enjoys a
+number of other hobbies including photography and art, and is
+the the curator of the Linux distro Li-f-e (Linux for Education).
+This diversity allows him to weave other threads through the
+book which add to the reading experience.
+<br><br>
+This is a well-written book, and one that dares to be different.
+Highly recommended. [Steve Uzochukwu, Skywings, November 2023 issue.]
+<br>
+</span></p>
+<button onclick="mymoreFunction2()" id="myBtn2">Read more</button>   
+				        </blockquote><!--//item-->
+				        <div class="source row gx-md-3 gy-3 gy-md-0">
+					        <div class="col-12 col-md-auto text-center text-md-start">
+					            <img class="source-profile" src="assets/images/profiles/skywings.jpg" alt="image" >
+					        </div><!--//col-->
+					        <div class="col source-info text-center text-md-start">
+						        <div class="source-name">Steve Uzochukwu</div>
+						        <div class="soure-title">Skywings Magazine, BHPA</div>
+						    </div><!--//col-->
+				        </div><!--//source-->
+				        <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
+				    </div><!--//inner-->
+			    </div><!--//item-->
+			    
+			    
+			    
+		    
 			    <div class="item col-12 col-lg-4 p-3 mb-4">
 				    <div class="item-inner theme-bg-light rounded p-4">
 					    
 					    <blockquote class="quote">
-					        "Excellent Book! Add your book review here consectetur adipiscing elit. Aliquam euismod nunc porta urna facilisis tempor. "     
+					        <p>"I wholeheartedly recommend "Aloft And Unbound" to anyone interested in exploring the wonders of paragliding or simply seeking an enjoyable read. Jigish's passion and authentic voice shine through these pages, and I am confident that you will find inspiration and delight within its covers.
+."<span id="dots1">...</span><span id="more1"><br><br>I feel honoured and touched when Jigish asked me to do the foreword for his book about the subject that is close to my heart. As someone whose life has been shaped by paragliding since the age of 14, I am a strong believer in the paragliding way of life and am passionate about sharing my love of the sport with others. 
+<br><br>
+When I first read Jigish's book "Aloft And Unbound," I was immediately intrigued. I am always eager to see how authors describe the experience of paragliding, as it can be challenging to articulate what it is all about. I believe that Jigish has done a fantastic job of conveying what paragliding is and the various elements that accompany it, such as the people we encounter, the relationships we develop, the locations we visit, and the adventures we have.
+<br><br>
+I am delighted to witness a pilot who genuinely embodies a passion for the sport, eagerly sharing his knowledge and experiences with the next generation of pilots, which is a trait we both value and appreciate. Having known Jigish for a long time and having observed his journey as a pilot since he first came to Bir, I've witnessed the positive changes that flying has brought to his life. Like many of us, he transitioned from being a visitor to Bir to becoming an integral part of the community. If you ever visit Bir, Jigish would be happy to welcome you to his home at Aloft in Bir for a cup of tea and a friendly chat. 
+<br><br>
+For pilots, in this book, you will be able to relate to a lot of the experiences, relationships, friendships, adventures, and stories told. There is also a lot of practical (and non-practical) info on the different flying sites around India with a little bit about the history and development of these sites, especially Bir, which, for many of us, holds a very special place in our hearts. Like Jigish, many pilots have made it their home. We also get a little bit of background and history of the Indian paragliding community.
+<br><br>
+For non-pilots, including family members or friends of paragliding pilots, this book offers a glimpse into why we are so enthusiastic about this sport and what it means to us. Whether it succeeds in conveying this message or not is up to the reader to determine after reading the book. The author blends adventure, experiences, personal stories, and insights, taking readers on a brief flight through our paragliding life with a pinch of quirky humour that I enjoyed immensely.
+<br><br>
+Whether you are a pilot or not, I highly recommend this book to anyone who is interested in learning more about paragliding life or who simply enjoys a good read.<br>
+</span></p>
+<button onclick="mymoreFunction1()" id="myBtn1">Read more</button>   
 				        </blockquote><!--//item-->
 				        <div class="source row gx-md-3 gy-3 gy-md-0">
 					        <div class="col-12 col-md-auto text-center text-md-start">
-					            <img class="source-profile" src="assets/images/profiles/profile-1.png" alt="image" >
+					            <img class="source-profile" src="assets/images/profiles/debu.png" alt="image" >
 					        </div><!--//col-->
 					        <div class="col source-info text-center text-md-start">
-						        <div class="source-name">James Doe</div>
-						        <div class="soure-title">Co-Founder, Startup Week</div>
+						        <div class="source-name">Debu Chaudhury</div>
+						        <div class="soure-title">Paragliding Pilot</div>
 						    </div><!--//col-->
 				        </div><!--//source-->
 				        <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
@@ -317,15 +483,35 @@
 			    <div class="item col-12 col-lg-4 p-3 mb-4">
 				    <div class="item-inner theme-bg-light rounded p-4">
 					    <blockquote class="quote">
-					        "Great Book! Add your book review here consectetur adipiscing elit. Aliquam euismod nunc porta urna facilisis tempor. Praesent mauris neque."     
-				        </blockquote><!--//item-->				        
+					    
+					    <p>"This book is different. It is light and quick, yet solid, like the best wings are. It is accessible and understandable like the advice Jigish gives to new pilots who turn to him. Like a good pilot, it both looks back and moves forward, and brings the sky within reach."<span id="dots">...</span><span id="more">
+
+<br><br>Where would we be, but for those who guide us?<br><br>
+
+I’m Vishal, a long-time musician, yet a relative newbie to the world of paragliding, and someone deeply grateful for the  community-spirit in a sport that has led me to friends and guides, one of whom is Jigish.<br><br>
+
+Jigish is a fixture in Bir, someone who shares his experience and knowledge with an open heart. (His YouTube guide to doing a 100km flight in Bir is genuinely helpful and is free to all!) His book is descriptive, engaging, funny, but I also see it as a unique social-guide to most paraglider pilots.<br><br>
+
+You see, I’ve realised since I “joined the cult” that paragliding is the “veganism” of sport in that anyone who does it, preaches it! A lot! You can’t get us to shut up about it!<br><br> 
+
+Sure, this comes from a place of love and enthusiasm, but the assumptions of a pilot in a conversation are that everyone dreams of flying and that everyone speaks “wind” in the same sort of arcane language that we use. The latter, of course, is emphatically not so!<br><br> 
+
+That’s where this book is different. It’s light and quick, yet solid, like the best wings are. It’s accessible and understandable like the advice Jigish gives to new pilots who turn to him. Like a good pilot, it both looks back and moves forward, and brings the sky within reach. It shares experiences, and it addresses both the updrafts and downdrafts of the sport we love, and the sites we love to fly in.<br><br>
+
+Jigish shares not just his love for paragliding and places we fly, but also his love for the people of and around the sport. This book is a record of the people and places he knew and the one he knows today and hopefully, it may bring you to these places that you may experience from the sky someday.<br>
+
+</span></p>
+
+<button onclick="mymoreFunction()" id="myBtn">Read more</button>     
+				        </blockquote><!--//item-->
+				        				        
 				        <div class="source row gx-md-3 gy-3 gy-md-0 align-items-center">
 					        <div class="col-12 col-md-auto text-center text-md-start">
 					            <img class="source-profile" src="assets/images/profiles/profile-2.png" alt="image" >
 					        </div><!--//col-->
 					        <div class="col source-info text-center text-md-start">
-						        <div class="source-name">Jean Doe</div>
-						        <div class="soure-title">Co-Founder, Company Tristique</div>
+						        <div class="source-name">Vishal Dadlani</div>
+						        <div class="soure-title">Singer, Songwriter, Composer, Rockstar and a Paragliding Pilot</div>
 						    </div><!--//col-->
 				        </div><!--//source-->
 				        
@@ -335,78 +521,58 @@
 			    <div class="item col-12 col-lg-4 p-3 mb-4">
 				    <div class="item-inner theme-bg-light rounded p-4">
 					    <blockquote class="quote">
-					        "Excellent Book! Add your book review here consectetur adipiscing elit. Pellentesque ac leo turpis. Phasellus imperdiet id ligula tempor imperdiet."     
+					        "Dive into the world of paragliding, experience it's thrills and rub shoulders with a breed of people whose world revolves around flying alone in the sky and yet live a life of deep camaraderie. Get insights into paragliding life and get a close up view of the thrills, enjoyment & pains of a paragliding pilot through the eyes of Jigish, who is into IT by profession and is a free bird at heart. A light read, with philosophical tones and a touch of romanticism."     
 				        </blockquote><!--//item-->
 				        <div class="source row gx-md-3 gy-3 gy-md-0 align-items-center">
 					        <div class="col-12 col-md-auto text-center text-md-start">
 					            <img class="source-profile" src="assets/images/profiles/profile-3.png" alt="image" >
 					        </div><!--//col-->
 					        <div class="col source-info text-center text-md-start">
-						        <div class="source-name">Tom Doe</div>
-						        <div class="soure-title">Product Designer, Company Lorem</div>
-						    </div><!--//col-->
+						        <div class="source-name">Ashutosh Chopra</div>
+						        <div class="soure-title">Author, Fighter Jets, Commercial Jets and a Paragliding Pilot</div>						    </div><!--//col-->
 				        </div><!--//source-->
 				         <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
 				    </div><!--//inner-->
 			    </div><!--//item-->
-			    <div class="item col-12 col-lg-4 p-3 mb-4">
+ <div class="item col-12 col-lg-4 p-3 mb-4">
 				    <div class="item-inner theme-bg-light rounded p-4">
 					    <blockquote class="quote">
-					        "Another book review here consectetur adipiscing elit. Pellentesque ac leo turpis. Phasellus imperdiet id ligula tempor imperdiet."     
+					        "The writer is my closest friend in the paragliding community, so plz pardon the bias :) ....go get a copy of the book to fully understand what a real long term paragliding, Shanti-Shanti, non-materialistic lifestyle looks and feel like. My friend Jigish(the author) is the epitome of happiness extractor from the most mundane, minimal, day to day activities. This book is less about flying and more about living... a must-read!!"     
 				        </blockquote><!--//item-->
 				        <div class="source row gx-md-3 gy-3 gy-md-0 align-items-center">
 					        <div class="col-12 col-md-auto text-center text-md-start">
 					            <img class="source-profile" src="assets/images/profiles/profile-4.png" alt="image" >
 					        </div><!--//col-->
 					        <div class="col source-info text-center text-md-start">
-						        <div class="source-name">Alice Doe</div>
-						        <div class="soure-title">App Developer, Company Ipsum</div>
-						    </div><!--//col-->
+						        <div class="source-name">Amit Kakade</div>
+						        						    </div><!--//col-->
 				        </div><!--//source-->
-				        <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
-				    </div><!--//inner-->
-			    </div><!--//item-->
-			    <div class="item col-12 col-lg-4 p-3 mb-4">
-				    <div class="item-inner theme-bg-light rounded p-4">
-					    <blockquote class="quote">
-					        "Another book review here consectetur adipiscing elit. Pellentesque ac leo turpis. Phasellus imperdiet id ligula tempor imperdiet."     
-				        </blockquote><!--//item-->
-				        <div class="source row gx-md-3 gy-3 gy-md-0 align-items-center">
-					        <div class="col-12 col-md-auto text-center text-md-start">
-					            <img class="source-profile" src="assets/images/profiles/profile-5.png" alt="image" >
-					        </div><!--//col-->
-					        <div class="col source-info text-center text-md-start">
-						        <div class="source-name">Sam Doe</div>
-						        <div class="soure-title">Co-Founder, Company Integer</div>
-						    </div><!--//col-->
-				        </div><!--//source-->
-				        <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
+				         <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
 				    </div><!--//inner-->
 			    </div><!--//item-->
 		    </div><!--//row-->
 		    <div class="text-center">
-		        <a class="btn btn-primary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devbook-free-bootstrap-5-book-ebook-landing-page-template-for-developers/">Get Your Copy Today</a>
+		        <a class="btn btn-primary" href="https://linktr.ee/aloftandunboundstore">Buy Now</a>
 		    </div>
 	    </div><!--//container-->
     </section><!--//reviews-section-->
     
-    <section id="author-section" class="author-section section theme-bg-primary py-5">
+    <section id="abouttheauthor" id="author-section" class="author-section section theme-bg-primary py-5">
 	    <div class="container py-3">
 		    <div class="author-profile text-center mb-5">
 			    <img class="author-pic" src="assets/images/profiles/author-profile.png" alt="image" >
 		    </div><!--//author-profile-->
 		    <h2 class="section-heading text-center text-white mb-3">About The Author</h2>
 		    <div class="author-bio single-col-max mx-auto">
-			    <p>This book landing page template is made by product designer <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers. You can use this template to self-publish and promote your book/ebook. You can easily use platforms such as <a class="theme-link" href="https://gumroad.com/" target="_blank">Gumroad</a> to handle your book payment and delivery.</p>
-			    <p> This template is 100% FREE as long as you <strong>keep the footer attribution link</strong>. You do not have the rights to resell, sublicense or redistribute (even for free) the template on its own or as a separate attachment from any of your work. If you’d like to use this template without the footer attribution link, you can buy the <a class="theme-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devbook-free-bootstrap-5-book-ebook-landing-page-template-for-developers/" target="_blank"><strong>commercial license</strong></a>.</p>
+			    <p>Jigish Gohil is an amateur in many things. In technology, he is the creator of an award-winning operating system: Life - Linux for Education. He is also a paragliding pilot and guide. Some of the things he dabbles in include architecture, philosophy, photography, baking, writing, and the arts. </p>
+			    <p>He lives in Bir and has extensive flying experience in the area. He knows Bir and the art of flying here a little better than many, making him a competent guide, perhaps the second best at most. And once you get to know him and his writing well, he'll be an acquired taste.</p>
 			    <div class="author-links text-center pt-4">
 			        <h5 class="text-white mb-4">Follow Author</h5>
 				    <ul class="social-list list-unstyled">
-					    <li class="list-inline-item"><a href="https://twitter.com/3rdwave_themes"><i class="fab fa-twitter"></i></a></li>
-					    <li class="list-inline-item"><a href="https://github.com/xriley"><i class="fab fa-github-alt"></i></a></li> 
-			            <li class="list-inline-item"><a href="https://medium.com/@3rdwave_themes"><i class="fab fa-medium-m"></i></a></li>
-			            
-			            <li class="list-inline-item"><a href="https://themes.3rdwavemedia.com/"><i class="fas fa-globe-europe"></i></a></li>
+					    <li class="list-inline-item"><a href="https://twitter.com/cyberorg"><i class="fab fa-twitter"></i></a></li>
+					    <li class="list-inline-item"><a href="https://instagram.com/paraguide.in"><i class="fab fa-instagram"></i></a></li> 
+ <li class="list-inline-item"><a href="https://instagram.com/aloftandunbound"><i class="fab fa-instagram"></i></a></li> 			            			            
+			            <li class="list-inline-item"><a href="https://paraguide.in/"><i class="fas fa-globe-asia"></i></a></li>
 			        </ul><!--//social-list-->
 			    </div><!--//author-links-->
 			    
@@ -414,7 +580,24 @@
 		    
 	    </div><!--//container-->
     </section><!--//author-section-->
-    
+<section id="sponsors">
+<div class="container">
+		    <h2 class="section-heading text-center mb-5">The book is graciously sponsored by</h2>
+		    <div class="section-intro single-col-max mx-auto text-center">
+        <a href="https://www.colonelsresort.com/index.html"><img src="assets/images/colonels.png" alt="" width=200></a>
+        <a href="http://dhispace.in/"><img src="assets/images/Dhi_Space.png" alt="" width=200></a>
+        <a href="https://indusparagliding.in/"><img src="assets/images/indus.png" alt="" width=200></a>
+        <a href="https://infinitearesorts.com/location/3"><img src="assets/images/infinitea.png" alt="" width=200></a>
+        <a href="https://instagram.com/nathyogfoundation"><img src="assets/images/nathyog.png" alt="" width=200></a>
+        <a href="https://flynirvana.com/"><img src="assets/images/nirvana.png" alt="" width=200></a>
+        <a href="https://orangelifeadventures.com/"><img src="assets/images/Orangelife.png" alt="" width=200></a>
+        <a href="https://parabooking.com/"><img src="assets/images/parabooking.png" alt="" width=200></a>
+        <a href="http://www.sayo.co.in/"><img src="assets/images/sayo.png" alt="" width=200></a>
+        <a href="https://www.templepilots.com/"><img src="assets/images/templepilots.png" alt="" width=200></a>
+        <a href="https://www.zostel.com/zostel/bir/bir-20-birh138/"><img src="assets/images/zostel.png" alt="" width=200></a>
+        </div>
+</div>
+</section>
     
 
     <footer class="footer">
@@ -427,13 +610,42 @@
 	    </div>
 	    
     </footer>
-       
+
     <!-- Javascript -->          
     <script src="assets/plugins/popper.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-    <script src="assets/plugins/smoothscroll.min.js"></script> 
-    
+    <script src="assets/plugins/smoothscroll.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/accordian.js"></script>
+    <script>// Get the button
+let mybutton = document.getElementById("mytopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}</script>
+  <script>
+function mynavFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>    
 
 </body>
 </html> 
